@@ -9,7 +9,7 @@ const getDefaultCart = () => {
   }
   return cart;
 };
-const ShopContextProvider = (props) => {
+export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   const addToCart = (itemId) => {
@@ -48,4 +48,3 @@ const ShopContextProvider = (props) => {
   );
 };
 
-export default ShopContextProvider;
