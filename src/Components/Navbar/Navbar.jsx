@@ -3,12 +3,12 @@ import "./Navbar.css";
 import logo from "../../assets/logo.webp";
 import cart_icon from "../../assets/cart_icon.png";
 import {BrowserRouter,Routes,Link, Route} from "react-router-dom"
-import { ShopContext2 } from "../../Context/ShopContext2";
+import { ShopContext } from "../../Context/ShopContext";
 
 const Navbar = () => {
 
  const [menu, setMenu] = useState("home");
-const {getTotalCartItems} = useContext(ShopContext2);
+const {getTotalCartItems} = useContext(ShopContext);
   return (
     <div className="navbar">
       <div className="nav-logo">
