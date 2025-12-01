@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./CartItem.css";
-import { ShopContext } from "../../Context/ShopContext";
+import { ShopContext2 } from "../../Context/ShopContext2";
 import remove from "../../assets/remove.webp";
 const CartItem = () => {
-  const { all_product, cartItems, getTotalCartAmount, removeFromCart } = useContext(ShopContext);
+  const { all_product, cartItems, getTotalCartAmount, removeFromCart } = useContext(ShopContext2);
   return (
     <div className="cartItems">
       <div className="cartitems-format-main">
